@@ -27,7 +27,7 @@ bool swapped;
 
 if (array == NULL || size < 2)
 {
-exit(EXIT_FAILURE);
+return;
 }
 
 while (i < size - 1)
