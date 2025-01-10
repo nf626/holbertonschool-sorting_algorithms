@@ -19,6 +19,8 @@ struct listint_s *next;
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
+void lomuto_sort(int *array, size_t size, int left, int right);
+int lomuto_part(int *array, size_t size, int left, int right);
 
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
