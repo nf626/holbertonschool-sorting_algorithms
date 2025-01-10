@@ -21,35 +21,35 @@ int temp = *x;
  */
 void selection_sort(int *array, size_t size)
 {
-  size_t i = 0, j;
-  int *min_index;
-  
-  if (array == NULL || size < 2)
-    {
-      return;
-    }
-  
-  while (i < size - 1)
-    {
-      j = i + 1;
-      min_index = array + i;
-      while (j < size)
-	{
-	  if (array[j] < *min_index)
-	    {
-	      min_index = array + j;
-	    }
-	  else
-	    {
-	      min_index = min_index;
-	    }
-	  j = j + 1;
-	}
-      if ((array + i) != min_index)
-	{
-	  swap(array + i, min_index);
-	  print_array(array, size);
-	}
-      i = i + 1;
-    }
+size_t i = 0, j;
+int *min_index;
+
+if (array == NULL || size < 2)
+{
+return;
+}
+
+while (i < size - 1)
+{
+j = i + 1;
+min_index = array + i;
+while (j < size)
+{
+if (array[j] < *min_index)
+{
+min_index = array + j;
+}
+else
+{
+min_index = min_index;
+}
+j = j + 1;
+}
+if ((array + i) != min_index)
+{
+swap(array + i, min_index);
+print_array(array, size);
+}
+i = i + 1;
+}
 }
